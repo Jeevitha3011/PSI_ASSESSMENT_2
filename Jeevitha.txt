@@ -1,0 +1,78 @@
+1)val strToFormat ="https://www.google.com"
+val reverseAndToUpperCase=strToFormat.reverse.toUpperCase()
+println(s"$strToFormat reversed and then to upper case =$reverseAndToUpperCase")
+
+2)val donutName="Vanilla Donut"
+val quantityPurchases=10
+val price=2.50
+val donutJson=
+s"""
+{
+"donut_name":"$donutName",
+"quantity_purchased":"$quantityPurchases",
+"price":$price
+}
+""".stripMargin
+
+3)import scala.io.StdIn._
+val name=readLine("Enter your name:")
+println("Enter your age:")
+println(Console.BOLD)
+print("Name:")
+println(Console.UNDERLINED)
+Print(name)
+println(Console.BOLD)
+print("Age:")
+println(Console.RESET)
+print(age)
+
+4)val str ="http://www.google.com"
+val charToFind=str.charAt(7)
+println(s"The 8th character literal in $str =$charToFind")
+
+5)val glazedDonut="Glazed Donut"
+val unitPrice =2.50
+val qtyPurchased =10
+val totalCost =qtyPurchased*unitPrice
+Println(f"""Total cost of $qtyPurchase$glazedDonut${if (qtyPurchased>1)"s"else""}$$$totalCost%1.2f""")
+
+
+6)import scala.io.StdIn._
+val favouriteMovie=readLine("what is your favourite movie of all times?")
+println(s"$favouriteMovie is totally awesome!")
+
+7) object quesSeven {
+  def main(args: Array[String]): Unit = {                                
+      val list = List("A","BB","CCC","DDDD","EEEEE")
+
+    var count:Int = 0
+    for(i <- list)
+      {
+        var a:String = i
+        for( a <- 1 to a.length() ){
+          count=count+1;
+        }
+        println(i+"-"+count)
+        count=0;
+
+      }
+  }
+}
+
+
+
+8) import scala.collection.mutable.ListBuffer
+
+   class quesEight{
+	var lst = ListBuffer[Int]()
+	
+	def main(args : Array[String]) : Unit = {
+		var n : Int = 100;
+		
+		while(n != 150){
+			lst += n
+			n += 10
+		}
+	}
+	println(lst)
+}
